@@ -75,7 +75,7 @@ class Character extends MovableObject {
     };
 
     gameOverSound = new Audio('audio/gameOver.mp3');
-    
+
 
     constructor() {
         super().loadImage('img/2_character_pepe/2_walk/W-21.png');
@@ -90,15 +90,14 @@ class Character extends MovableObject {
         this.animate();
     }
 
-    
+
     /**
      * Animates characters position in relation to player input.
      * Sycronizes picture animation in relation to his movements, health status and actions.
      */
     animate() {
-        setStopableInterval(() => {
-            this.characterMove();
-        }, 1000 / 80);
+        this.moveOption();
+
         let i = 0
         setStopableInterval(() => {
             if (i < 5 && !this.isAboveGround())
@@ -112,12 +111,30 @@ class Character extends MovableObject {
                 this.hadGo = true;
             }
         }, 150);
+        this.goOption();
+        this.actionOption();
+        this.hurtOption();
+    }
+
+    moveOption() {
+        setStopableInterval(() => {
+            this.characterMove();
+        }, 1000 / 80);
+    }
+
+    goOption() {
         setStopableInterval(() => {
             this.characterGo();
         }, 150);
+    }
+
+    actionOption() {
         setStopableInterval(() => {
             this.characterInAction();
         }, 300);
+    }
+
+    hurtOption(){
         setStopableInterval(() => {
             this.characterHurt();
         }, 10);
@@ -125,20 +142,32 @@ class Character extends MovableObject {
 
 
     characterMove() {
-        if (this.world.keyboard.RIGHT && this.x < this.world.level.level_end_x) {
+        if (this.checkMoveRight()) {
             this.otherDirection = false;
             this.moveRight();
             this.otherDirection = false;
         }
-        if (this.world.keyboard.LEFT && this.x > -100) {
+        if (this.checkMoveLeft()) {
             this.otherDirection = true;
             this.moveLeft();
             this.otherDirection = true;
         }
-        if (this.world.keyboard.UP && !this.isAboveGround()) {
+        if (this.checkJump()) {
             this.jump();
         }
         this.world.camera_x = -this.x + 60;
+    }
+
+    checkMoveRight(){
+        return this.world.keyboard.RIGHT && this.x < this.world.level.level_end_x
+    }
+
+    checkMoveLeft(){
+        return this.world.keyboard.LEFT && this.x > -100
+    }
+
+    checkJump(){
+        return this.world.keyboard.UP && !this.isAboveGround()
     }
 
 
@@ -171,7 +200,7 @@ class Character extends MovableObject {
         stopGame();
     }
 
- 
+
     /**
      * Showes you lost screen.
      */
