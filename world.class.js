@@ -121,11 +121,15 @@ class World {
                 enemy.hit();
                 setTimeout(this.chickenDies(enemy), 2000);
             }
-            else if (this.character.isColliding(enemy) && !this.character.isAboveGround()) {
+            else if (this.check(enemy)) {
                 this.character.hit();
                 this.statusBar.setPercentage(this.character.energie);
             }
         }));
+    }
+
+    check(enemy){
+        return this.character.isColliding(enemy) && !this.character.isAboveGround()
     }
 
 
@@ -228,23 +232,27 @@ class World {
         this.addObjectToMap(this.level.backgroundObjects); 
         this.ctx.translate(-this.camera_x, 0);
         this.addObjectToMap(this.level.clouds);
+        this.drawStatusBar();
+        this.ctx.translate(this.camera_x, 0);
+        this. drawPlayObject();
+        this.ctx.translate(-this.camera_x, 0);
+        this.drawObject();
+    }
+
+    drawStatusBar(){
         this.addToMap(this.statusBar);
         this.addToMap(this.bottleBar);
         this.addToMap(this.coinBar);
         this.addToMap(this.endbossBar);
-        this.ctx.translate(this.camera_x, 0);
-           
+    }
+
+    drawPlayObject(){
         this.addObjectToMap(this.throwableObject);
         this.addObjectToMap(this.level.coins);
         this.addObjectToMap(this.level.bottles);
         this.addObjectToMap(this.level.enemies);
         this.addObjectToMap(this.level.endboss);
-     
         this.addToMap(this.character);
-        
-        this.ctx.translate(-this.camera_x, 0);
-
-        this.drawObject();
     }
 
 
