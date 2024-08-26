@@ -277,790 +277,199 @@ canvas{
     background-image: linear-gradient(rgb(255, 166, 0) 10%, rgb(255, 230, 0) 60%, rgb(255, 128, 0) 90%);   
     }
 
-    @media only screen and (max-width: 1450px){
-    .icon-full{
-        margin-left: 46vh;
-    }
-}
 
-@media only screen and (max-width: 1024px){
-    .sound-button{
-        margin-top: -58px;
-    }
 
-    .info-button{
-        margin-top: -58px;
-    }
-
-    .full-screen-button {
-        margin-top: 300px;
-    }
-
-    #gamename{
-        font-size: 67px;
-    }
-
-    .mobile-key {
-        margin-top: 61vh;
-    }
-
-    .icon-full{
-        margin-left: 307px;
-    }
-
-    .info {
-        width: 720px;
-    }
-}
-@media only screen and (max-width: 900px){
-
-    body{
-        background-size: initial;
-    }
-
-    canvas{
-        width: 100%;
-    }
-
-    .game-over{
-        width: 100%;
-        height: 100%;
-    }
-
-    .start{
-        width: 100%; 
-        margin-top: 5px;
-    }
-
-    #start-img{
-        width: 100%;
-        height: 100%;
-        margin-top: 4px;
-    }
-    
-    .info{
-        width: 100%;
-        margin-top: 4px;
-    }
-
-    #gamename{
-        font-size: 50px;
-        margin-top: 20px;
-    }
-
-    .sound-button{
-        margin-top: -108px;
-    }
-
-    .info-button{
-        margin-top: -108px;
-    }
-
-    .button{
-        margin-left: 67px;
-        margin-top: 22px;
-    }
-
-    .full-screen-button{
-        display: none;
-    }
-
-    .key-description{
-        margin-top: 10px;
-        font-size: 12px;
-    }
-
-    .key-description-text{
-        margin-top: 27px;
-    }
-
-    .mobile-key{
-        margin-top: 58vh;
-        width: 80%;
-    }
-
-    .rechts{
-        margin-left: 5px;
-    }
-
-    .key-description{
-        margin-right: 10px;
-    }
-
-    .screen-button {
-        padding-top: 45vh;
-    }
-
-    .icon-full{
-        margin-top: -200px!important;
-        margin-left: 307px;
-    }
-}
-
-
-@media only screen and (max-width:850px){
-    .mobile-key{
-        margin-top: 57vh;
-    }
-
-    .icon-full{
-        margin-top: -180px!important;
-    }
-}
-
-
-@media only screen and (max-width:808px){
-    .mobile-key{
-        margin-top: 58vh;
-    }
-}
-
-
-
-@media only screen and (max-width:769px){
-    .mobile-key{
-        margin-top: 58vh;
-    }
-
-    .icon-full{
-        margin-top: -150px!important;
-    }
-}
-
-
-@media only screen and (max-width:717px){
-    .mobile-key{
-        margin-top: 55vh;
-    }
-
-    .screen-button {
-        padding-top: 40vh;
-}
-}
-
-
-@media only screen and (max-width:753px){
-.sound-button{
-    margin-left: 275px;
-    margin-top: -74px;
-}
-
-.info-button{
-    margin-left: 220px;
-    margin-top: -74px;
-}
-}
-
-@media only screen and (max-width:693px){
-    .mobile-key{
-        margin-top: 51vh;
-    }
-}
-
-@media only screen and (max-width:671px){
-    .mobile-key{
-        margin-top: 52vh;
-    }
-
-    .key-description-text {
-        margin-top: 27px;
-        font-size: 25px;
-    }
-
-    .screen-button {
-        padding-top: 36vh;
-    }
-
-    .icon-full{
-        margin-top: -130px!important;
-    }
-}
-
-@media only screen and (max-width:613px){
-    .sound-button{
-        margin-top: -36px;
-        margin-left: 207px;
-    }
-
-    .info-button{
-        margin-left: 150px;
-        margin-top: -36px;
-    }
-
-    .screen-button {
-        margin-top: -25px!important;
-    } 
-
-    .icon-full{
-        margin-top: -110px!important;
-    }
-
-    .mobile-key{
-        margin-top: 48vh;
-    }
-}
-
-
-@media only screen and (max-width:536px){
-
-    .screen-button {
-        margin-top: -27px!important;
-    } 
-
-    .mobile-key{
-        margin-top: 45vh;
-    }
-
-}
-
-
-@media only screen and (max-width:520px){
-    .sound-button{
-        margin-top: -55px;
-        margin-left: 190px;
-    }
-
-    .info-button{
-        margin-left: 140px;
-        margin-top: -55px;
-    }
-
-    #start-img {
-        margin-top: -57px;
-    }
-
-    .info{
-        margin-top: -57px;
-    }
-
-.button {
-    margin-top: -44px;
-}
-
-.screen-button {
-    margin-top: -52px!important;
-} 
-
-.full-screen{
-    margin-top: -3px!important;
-}
-
-.midle-full{
-    margin-left: 150px;
-    margin-top: 16px;
-}
-
-.midle{
- /*   margin-top: 10px!important;*/
-}
-}
-
-@media only screen and (max-width:505px){
-    .sound-button{
-        margin-top: -20px;
-        margin-left: 190px;
-    }
-
-    .info-button{
-        margin-left: 140px;
-        margin-top: -20px;
-    }
-
-    .screen-button {
-        margin-top: -62px!important;
-    }    
-
-    .midle-full{
-        margin-top: 12px!important;
-    }
-
-    .midle{
-      /*  margin-top: 15px!important;*/
-    }
-
-    .mobile-key{
-        margin-top: 50vh;
-    }
-}
-
-@media only screen and (max-width:480px){
-   
-    .button{
-      margin-top: -26px;
-    }
-
-    #start-img {
-        margin-top: -37px;
-    }
-
-    .info{
-        margin-top: -37px;
-    }
-
-    .sound-button{
-        margin-top: 5px;
-        margin-left: 170px;
-    }
-
-    .info-button{
-        margin-left: 120px;
-        margin-top: 5px;
-    }
-
-    #gamename{
-        font-size: 53px;
-    }
-
-    .key-description-text {
-        margin-top: 24px;
-        font-size: 21px;
-    }
-
-    .screen-button {
-        margin-top: -65px!important;
-    }   
-
-    .icon-full{
-        margin-top: -95px!important;
-    }
-
-    .midle-full{
-        margin-left: 111px!important;
-    }
-
-    .mobile-key{
-        margin-top: 48vh;
-    }
-
-}
-
-
-@media only screen and (max-width:420px){
-    .rotate{
-        display: block;
-        color: white;      
-    }
-
-    .dont-rotate{
-        display: none;
-        
-    }
-}
-
-
-
-@media only screen and (max-width:393px){
-    .sound-button {
-        margin-top: 206px;
-        margin-left: -126px;
-    }
-
-    .button{
-        margin-top: 50%;
-        width: 180px;
-        height: 42px;
-        margin-left: 23%;
-      }
-
-      .key-description-text {
-        margin-top: 0px;
-    }
-
-    .rotate{
-        font-size: 60px;
-    }
-}
-
-@media only screen and (max-width:305px){
-    .sound-button {
-        margin-top: 217px;
-        margin-left: -40px;
-    }
-
-    .info-button {
-        margin-top: 214px;
-        margin-left: 40px;
-    }
-
-    .button{
-        margin-top: 50%;
-        margin-left: 1%;
-    }
-    
-    .info{
-        height: 64%;
+@media only screen and (max-width: 1007px){
+        h1{
+            font-size: 80px;
         }
-}
-
-
-@media only screen and (max-width:270px){
-    .rotate{
-        font-size: 40px;
-    }
-}
-
-
-@media only screen and (max-height: 920px){
-    .mobile-key{
-        margin-top: 70vh;
-    }
-
-}
-
-@media only screen and (max-height: 847px){
-    .icon-full{
-        margin-top: -262px!important;
-        margin-left: 70vh;
-    }
-
-    .full-screen{
-        margin-top: 35px!important;
-        width: 100vw
-    }
-
-    .mobile-key {
-        margin-top: 76vh;
-    }
-   
-}
-
-@media only screen and (max-height: 787px){
-.mobile-key {
-    margin-top: 82vh;
-}
-}
-
-
-@media only screen and (max-height: 743px){
-    #gamename {
-        display: none;
-    }
-
-    #start-img {
-        margin-top: 114px;
+        .mobile-key {
+            margin-top: 568px;
         }
-    
-        .info-button {
-            margin-top: -132px;
-        }
-    
-        .sound-button {
-            margin-top: -132px;
-        }
-    
-        .full-screen-button {
-            margin-top: 226px;
+    }
+
+    @media only screen and (max-width: 806px){
+        h1{
+            font-size: 50px;
         }
 
-        .full-screen{
+        .midle-full{
+            height: 99px;
+            font-size: 53px;
+            width: 259px;
+            margin-left: 190px;
+        }
+    }
+
+    @media only screen and (max-width: 751px){
+        #start-img, #canvas,  #game_over_win, #game_over_win2,  #game_over,  #game_over2{
+            width: 100%;
+            height: 100%;
+        }
+
+        .info{
+            width: 100%;
+        }
+
+        .midle{
+            margin-left: 145px!important;
             margin-top: 35px!important;
         }
 
-        .midle {
-            margin-left: 246px;
-            margin-top: 145px;
-        }
-
-        .icon-full {
-            margin-top: -230px!important;
-            margin-left: 85vh;
-        }
-
-        #button-over{
-            margin-top: 48px;
-        }
-
-        .full-screen-button {
-            margin-top: 254px;
-        }
-
         .mobile-key {
-            margin-top: 51vh;
+            margin-top: 75vw;
+        }
+    }
+
+    @media only screen and (max-width:520px){
+        .rotate{
+            font-size: 50px;
         }
 
-        .info{ 
-            margin-top: 114px;
-        }
-}
-
-@media only screen and (max-height:670px){
-.icon-full {
-    margin-top: -181px!important;
-    margin-left: 100vh;
-}
-
-.mobile-key {
-    margin-top: 59vh;
-}
-}
-
-@media only screen and (max-height:600px){
-    #gamename {
-        display: none;
-    }
-
-    .info{ 
-        margin-top: 48px;
-    }
-
-    #start-img {
-    margin-top: 48px;
-    }
-
-    .info-button {
-        margin-top: -172px;
-    }
-
-    .sound-button {
-        margin-top: -172px;
-    }
-
-    .full-screen-button {
-        margin-top: 200px;
-    }
-
-    .midle {
-        margin-left: 246px;
-        margin-top: 60px;
-    }
-
-    .mobile-key {
-        margin-top: 67vh;
-    }
-    
-}
-
-
-@media only screen and (max-height:541px){
-    
-    .icon-full {
-        margin-top: -151px!important;
-        margin-left: 120vh;
-    }
-    
-    #start-img {
-    margin-top: 0px;
-    }
-
-    .info-button {
-        margin-top: -172px;
-    }
-
-    .sound-button {
-        margin-top: -172px;
-    }
-
-    .full-screen-button {
-        margin-top: 204px;
-    }
-
-    .mobile-key {
-        margin-top: 78vh;
-    }
-
-    .info{ 
-        margin-top: 0px;
-    }
-}
-
-
-@media only screen and (max-height:479px){
-    #gamename {
-    display: none;
-    }
-
-    .start{
-        margin-top: 0px;
-    }
-    #start-img {
-        width: 100%;
-        height: 100vh;
-        margin-top: 0px;
-    }
-
-    .info{
-        width: 769px;
-        height: 100vh;
-        margin-top: 0px;
-    }
-
-    .info-button {
-        margin-left: 182px;
-        margin-top: -172px;
-    }
-
-    .sound-button {
-        margin-left: 250px;
-        margin-top: -172px;
-    }
-
-    .key-description-text {
-        margin-top: 2px;
-    }
-
-    .key {
-        margin-bottom: 39px;
-    }
-
-    canvas {
-        width: 133%;
-        height: 100vh;
-        margin-top: 0px;
-    }
-
-    .game-over {
-        width: 100%;
-        height: 100vh;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-
-    .screen-button {
-        padding-left: 48vw;
-    }
-
-    .full-screen-button {
-       display: none;
-    }
-
-    .mobile-key {
-        margin-top: 85vh;
-    }
-
-    .midle {
-        margin-left: 164px;
-        margin-top: 16px!important;
-    }
-
-    .icon-full{
-        margin-left: 76vh;
-    }
-
-    .full-screen {
-        margin-top: 0px!important;
-    }
-
-    .midle-full{
-        margin-top: 38px;
-    }
-}
-
-@media only screen and (max-height: 450px){
-    .screen-button {
-        padding-left: 41vw;
-    }
-
-    canvas{
-        width: 125%;
-    }
-}
-
-@media only screen and (max-height: 412px){
-
-canvas{
-    width: 118%;
-}
-
-.mobile-key {
-    margin-top: 80vh;
-    width: 77%;
-}
-
-.info-button {
-    margin-left: 182px;
-    margin-top: -155px;
-}
-
-.sound-button {
-    margin-left: 228px;
-    margin-top: -155px;
-}
-
-.screen-button {
-    padding-left: 30vw;
-}
-
-.info{
-    width: 733px;
-}
-
-.key-description-text {
-   font-size: 25px;
-}
-}
-
-@media only screen and (max-height: 393px){
-    .info{
-        width: 697px;
-    }
-}
-@media only screen and (max-height: 370px){
-    
-    .info-button {
-        margin-left: 182px;
-        margin-top: -140px;
-        width: 25px;
-        height: 25px;
-    }
-    
-    .sound-button {
-        margin-left: 236px;
-        margin-top: -140px;
-        width: 25px;
-        height: 25px;
-    }
-
-    .screen-button {
-        padding-left: 27vw;
-    }
-
-    .icon-full{
-        margin-left: 229px;
-        margin-top: -104px!important;
-    }
-
-    .midle-full {
-        margin-left: 156px;
-    }
-
-    .info {
-        width: 662px;
-    }
-
-    .key-description-text {
-        font-size: 19px;
-    }
-
-    }
-    
-
-    @media only screen and (max-height: 326px){
-    
-        .info-button {
-            margin-left: 182px;
-            margin-top: -120px;
-        }
-        
-        .sound-button {
-            margin-left: 155px;
-            margin-top: -120px;
+        .st-midle{
+            margin-left: 0px;
         }
 
-        .mobile-key {
-            width: 23%;
+        .button{
+            width: 153px;
+            height: 44px;
+        }
+    }
+
+    @media only screen and (max-width:420px){
+        .rotate{
+            display: block;
+            color: white;      
+        }
+    
+        .dont-rotate{
+            display: none;
+            
+        }
+    }
+
+    @media only screen and (max-height: 728px){
+        h1{
+            display: none;
         }
 
+        body{
+            justify-content: center;
+        }
+
+        .rotate{
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .mobile-key{
+            margin-top: 371px;
+        }
+    }
+
+    @media only screen and (max-height: 705px){
         .midle-full {
-            margin-top: 21px;
+            margin-top: 20px !important;
+            height: 58px;
+            font-size: 38px;
+            width: 234px;
+        }
+    } 
+
+    @media only screen and (max-height: 536px){
+        #start-img, #canvas,  #game_over_win, #game_over_win2, .info,  #game_over,  #game_over2{
+            height: 100vh;
+            width: 66vw;
         }
 
-        .key {
-            margin-bottom: 19px;
+        .st-midle{
+            margin-top: -14px !important;
+        }
+
+        .midle{
+            margin-top: 37px !important;
         }
     }
 
-    @media only screen and (max-height: 300px){
-    .info {
-        width: 500px;
+    @media only screen and (max-height: 470px){
+        .mobile-key {
+            margin-top: 77vh!important;
+        }
+    } 
+
+    @media only screen and (max-height: 444px){
+        .midle-full {
+            margin-top: -15px!important;
+        }
+
+        .information {
+            padding-top: 25px;
+        }
+    } 
+
+    @media only screen and (min-height: 728px)and (max-width: 751px){
+        .midle{
+            margin-top: 40px;
+        }
+
+        .information {
+            padding-top: 0px;
+        }
     }
-}
+
+    @media only screen and (min-height: 536px)and (max-width: 751px){
+        .information {
+            padding-top: 0px;
+        }
+    }
+
+
+    @media only screen and (max-height: 728px)and (max-width: 1007px){
+
+        .mobile-key{
+            margin-top: 371px;
+        }
+    }
+
+    @media only screen and (max-height: 536px)and (max-width: 1155px){
+        #start-img, #canvas,  #game_over_win, #game_over_win2,  #game_over,  #game_over2{
+            height: 95vh;
+            width: 93vw;
+        }
+
+        .info{
+            height: 95vh;
+            width: 93vw;
+            top: 10px;
+        }
+
+        .st-midle {
+            margin-top: -7px !important;
+        }
+
+        .midle{
+            margin-top: 37px!important;
+        }
+    }
+
+    @media only screen and (max-height: 550px)and (max-width: 774px){
+        .key-description-text {
+            font-size: 20px;
+        }
+    }
+
+    @media only screen and (max-height: 307px)and (max-width: 762px){
+        .key-description {
+            margin-top: 0px;
+        }
+    }
+
+    @media only screen and (max-height: 307px)and (min-width: 762px){
+        .key-description-text {
+            font-size: 20px;
+        }
+
+        .key-description {
+            margin-top: 0px;
+        }
+    }
