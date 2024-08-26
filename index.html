@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,90 +31,98 @@
 </head>
 
 <body>
-
-    <img src="img/7_statusbars/3_icons/fullscreen-12-48.png" class="full-screen-button" id="fullscreen"
-        onclick="fullscreen()"></img>
-    <img src="img/7_statusbars/3_icons/fullscreen-12-48.png" class="screen-button d-none" id="smallscreen"
-        onclick="smallscreen()"></img>
-    <img src="img/sound/on.png" class="sound-button d-none" id="soundon" onclick="on()"></img>
-    <img src="img/sound/off.png" class="sound-button" id="soundoff" onclick="on()"></img>
+    <div class="dont-rotate">
 
 
-    <h1 id="gamename">EL POLLO LOCO</h1>
-    <div class="start" id="start" width="720px" height="480px">
-        <img id="start-img" src="img/9_intro_outro_screens/start/startscreen_2.png" width="720px" height="480px">
-
-        <button id="button" class="button midle" onclick="startGame(), init()">START</button>
-        <div class="key">
-            <div class="key-description">
-                <img src="img/key/left.png">
-                Links
+        <h1 id="gamename">EL POLLO LOCO</h1>
+        <div class="start" id="start" width="720px" height="480px">
+            <div class="information">
+                <img src="img/7_statusbars/3_icons/fullscreen-12-48.png" class="full-screen-button" id="fullscreen"
+                    onclick="fullscreen()"></img>
+                <img src="img/7_statusbars/3_icons/fullscreen-12-48.png" class="screen-button d-none" id="smallscreen"
+                    onclick="smallscreen()"></img>
+                <img src="img/info.png" class="info-button" id="info-button" onclick="showInfo()">
+                <img src="img/sound/on.png" class="sound-button d-none" id="soundon" onclick="soundOnOff()"></img>
+                <img src="img/sound/off.png" class="sound-button" id="soundoff" onclick="soundOnOff()"></img>
+                <button id="button" class="button st-midle" onclick="startGame(), init()">START</button>
             </div>
-            <div class="key-description">
-                <img src="img/key/jump.png">
-                Springen
-            </div>
+            <img id="start-img" src="img/9_intro_outro_screens/start/startscreen_2.png" width="720px" height="480px">
 
-            <div class="key-description">
-                <img class="rechts" src="img/key/left.png">
-                Rechts
-            </div>
 
-            <div class="key-description">
-                <img class="space" src="img/key/throw.png">
-                Werfen
+
+
+            <div class="info d-none" id="info">
+                <div class="key">
+                    <div class="key-description">
+                        <img src="img/key/left.png">
+                       Left
+                    </div>
+                    <div class="key-description">
+                        <img src="img/key/jump.png">
+                        Jump
+                    </div>
+
+                    <div class="key-description">
+                        <img class="rechts" src="img/key/left.png">
+                        Right
+                    </div>
+
+                    <div class="key-description">
+                        <img class="space" src="img/key/throw.png">
+                        Throw
+                    </div>
+
+                </div>
+
+                <div class="key-description-text">
+                    Defeat El Pollo Loco and win the game! <br>
+                    To defeat Pollo Loco, collect the bottles and throw them at the chicken. <br>
+                    Be careful, every chicken can hurt you. Defend yourself!<br>
+
+                </div>
+                <img class="cancel" src="img/cancel-logo.svg" onclick="cancelInfo()">
             </div>
+        </div>
+        <div class="d-none" id="game_over_win">
+            <button id="button-end" class="button midle" onclick="restartGame(), init()">RESTART</button>
+            <img class="game-over" id="game_over_win2" src="img/9_intro_outro_screens/game_over/game over!.png"
+                width="720px" height="480px">
+        </div>
+
+
+
+        <div class="d-none" id="game_over">
+            <button id="button-over" class="button midle" onclick="restartGame(), init()">RESTART</button>
+            <img class="game-over" id="game_over2" src="img/9_intro_outro_screens/game_over/oh no you lost!.png"
+                width="720px" height="480px">
 
         </div>
 
-        <div class="key-description-text">
-            Töte el Pollo loco und gewinne das Spiel! <br>
-            Um Pollo loco zu besiegen, sammle die Flaschen und werfe sie auf den Huhn. <br>
-            Pass auf, jeder Hünchen kann dich verletzen. Verteidiege dich!<br>
-            <b>
-                Drehe den Bildschirm um zu spielen!
-            </b>
-        </div>
-    </div>
-    <div class="d-none" id="game_over_win">
-        <button id="button-end" class="button midle" onclick="restartGame(), init()">RESTART</button>
-        <img class="game-over" id="game_over_win2" src="img/9_intro_outro_screens/game_over/game over!.png"
-            width="720px" height="480px">
-    </div>
 
+        <canvas id="canvas" class="d-none" width="720px" height="480px"> </canvas>
+        <div id="mobile-key" class="mobile-key d-none">
+            <div class="together">
+                <div class="key-description">
+                    <img id="left-mobil" src="img/key/left.png">
+                </div>
+                <div class="key-description">
+                    <img id="right-mobil" class="rechts" src="img/key/left.png">
+                </div>
 
-
-    <div class="d-none" id="game_over">
-        <button id="button-over" class="button midle" onclick="restartGame(), init()">RESTART</button>
-        <img class="game-over" id="game_over2" src="img/9_intro_outro_screens/game_over/oh no you lost!.png"
-            width="720px" height="480px">
-
-    </div>
-
-
-    <canvas id="canvas" class="d-none" width="720px" height="480px"> </canvas>
-    <div id="mobile-key" class="mobile-key">
-        <div class="together">
-            <div class="key-description">
-                <img id="left-mobil" src="img/key/left.png">
             </div>
-            <div class="key-description">
-                <img id="right-mobil" class="rechts" src="img/key/left.png">
+
+            <div class="together">
+                <div class="key-description">
+                    <img id="jump-mobil" src="img/key/jump.png">
+                </div>
+                <div class="key-description">
+                    <img id="bottle-mobil" class="space" src="img/key/bottle-4-48.png">
+                </div>
             </div>
 
         </div>
-
-        <div class="together">
-            <div class="key-description">
-                <img id="jump-mobil" src="img/key/jump.png">
-            </div>
-            <div class="key-description">
-                <img id="bottle-mobil" class="space" src="img/key/bottle-4-48.png">
-            </div>
-        </div>
-
     </div>
-
+    <div class="rotate"> Please rotate your device</div>
 </body>
 
 </html>
